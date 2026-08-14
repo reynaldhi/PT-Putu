@@ -106,7 +106,7 @@ export default function Navbar() {
               Certifications
             </a>
             <a
-              href="#contact"
+              href="https://wa.me/+6289699844403?text=Halo%20PT%20Putu%20Marta%20Mandiri,%20saya%20ingin%20konsultasi%20proyek"
               onClick={() => setMobileMenuOpen(false)}
               className="mt-2 text-center py-3 bg-primary text-white rounded-xl font-semibold text-sm hover:bg-primary-hover transition-all"
             >

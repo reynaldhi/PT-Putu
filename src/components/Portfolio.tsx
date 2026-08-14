@@ -3,12 +3,12 @@
 import { useState } from "react";
 import Image from "next/image";
 
-type Category = "Semua" | "Gas Piping" | "Interior";
+type Category = "Semua" | "Plumbing" | "Interior" | "Mechanical" | "Material";
 
 interface ProjectItem {
   id: number;
   title: string;
-  category: "Gas Piping" | "Interior";
+  category: "Plumbing" | "Interior" | "Mechanical" | "Material";
   image: string;
   location: string;
 }
@@ -17,7 +17,7 @@ const projects: ProjectItem[] = [
   {
     id: 1,
     title: "Industrial Plant Alpha",
-    category: "Gas Piping",
+    category: "Plumbing",
     location: "Kawasan Industri Cikarang",
     image: "/images/projects/gas-piping-2.jpg",
   },
@@ -31,37 +31,51 @@ const projects: ProjectItem[] = [
   {
     id: 3,
     title: "Refinery Project Beta",
-    category: "Gas Piping",
+    category: "Plumbing",
     location: "Cilegon Industrial Zone",
     image: "/images/projects/gas-piping-3.jpg",
   },
   {
     id: 4,
     title: "Refinery Project Beta",
-    category: "Gas Piping",
+    category: "Plumbing",
     location: "Cilegon Industrial Zone",
     image: "/images/projects/gas-piping-4.jpg",
   },
   {
     id: 5,
     title: "Refinery Project Beta",
-    category: "Gas Piping",
+    category: "Plumbing",
     location: "Cilegon Industrial Zone",
     image: "/images/projects/gas-piping-5.jpg",
   },
   {
     id: 6,
     title: "Refinery Project Beta",
-    category: "Gas Piping",
+    category: "Plumbing",
     location: "Cilegon Industrial Zone",
     image: "/images/projects/gas-piping-6.jpg",
   },
   {
     id: 7,
     title: "Refinery Project Beta",
-    category: "Gas Piping",
+    category: "Mechanical",
     location: "Cilegon Industrial Zone",
-    image: "/images/projects/gas-piping-7.jpg",
+    image: "/images/projects/burner-1.jpg",
+  },
+  {
+    id: 8,
+    title: "Refinery Project Beta",
+    category: "Material",
+    location: "Cilegon Industrial Zone",
+    image: "/images/projects/regulator-1.jpg",
+  },
+  {
+    id: 9,
+    title: "Refinery Project Beta",
+    category: "Mechanical",
+    location: "Cilegon Industrial Zone",
+    image: "/images/projects/boiler-2.jpg",
   },
 ];
 
@@ -76,7 +90,6 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-20 bg-bg-light">
       <div className="max-w-[1280px] mx-auto px-6">
-        {/* Header & Filter Controls */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
           <div className="max-w-xl">
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-slate-navy mb-4">
@@ -87,9 +100,8 @@ export default function Portfolio() {
             </p>
           </div>
 
-          {/* Filter Tabs */}
           <div className="flex gap-2 bg-white p-1.5 rounded-xl border border-outline-variant/60 shadow-soft">
-            {(["Semua", "Gas Piping", "Interior"] as Category[]).map(
+            {(["Semua", "Plumbing", "Interior", "Mechanical", "Material"] as Category[]).map(
               (category) => (
                 <button
                   key={category}
@@ -106,7 +118,6 @@ export default function Portfolio() {
           </div>
         </div>
 
-        {/* 3-Card Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <div
