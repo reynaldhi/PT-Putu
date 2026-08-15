@@ -100,21 +100,23 @@ export default function Portfolio() {
             </p>
           </div>
 
-          <div className="flex gap-2 bg-white p-1.5 rounded-xl border border-outline-variant/60 shadow-soft">
-            {(["Semua", "Plumbing", "Interior", "Mechanical", "Material"] as Category[]).map(
-              (category) => (
-                <button
-                  key={category}
-                  onClick={() => setActiveFilter(category)}
-                  className={`px-5 py-2 rounded-lg font-medium text-sm transition-all duration-200 ${activeFilter === category
-                    ? "bg-primary text-white shadow-sm"
-                    : "text-surface-variant hover:text-slate-navy hover:bg-slate-100"
-                    }`}
-                >
-                  {category}
-                </button>
-              )
-            )}
+          <div className="w-full md:w-auto overflow-x-auto no-scrollbar py-1">
+            <div className="flex gap-2 bg-white p-1.5 rounded-xl border border-outline-variant/60 shadow-soft w-max">
+              {(["Semua", "Plumbing", "Interior", "Mechanical", "Material"] as Category[]).map(
+                (category) => (
+                  <button
+                    key={category}
+                    onClick={() => setActiveFilter(category)}
+                    className={`px-5 py-2 rounded-lg font-medium text-sm whitespace-nowrap shrink-0 transition-all duration-200 ${activeFilter === category
+                      ? "bg-primary text-white shadow-sm"
+                      : "text-surface-variant hover:text-slate-navy hover:bg-slate-100"
+                      }`}
+                  >
+                    {category}
+                  </button>
+                )
+              )}
+            </div>
           </div>
         </div>
 
