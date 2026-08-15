@@ -24,7 +24,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Pemasangan dan perawatan jaringan pipa gas industri serta sistem hydrant dengan jaminan keamanan dan pengujian tersertifikasi.",
     icon: Wrench,
-    imageSrc: "/images/services/gas-piping-1.jpg",
+    imageSrc: "/images/services/piping-service.jpg",
     imageAlt: "Instalasi Pipa Gas Industri",
     features: [
       "Instalasi & Perencanaan Pipa Gas",

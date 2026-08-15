@@ -31,9 +31,9 @@ const projects: ProjectItem[] = [
   {
     id: 3,
     title: "Refinery Project Beta",
-    category: "Plumbing",
+    category: "Mechanical",
     location: "Cilegon Industrial Zone",
-    image: "/images/projects/gas-piping-3.jpg",
+    image: "/images/projects/boiler-4.jpeg",
   },
   {
     id: 4,
@@ -45,9 +45,9 @@ const projects: ProjectItem[] = [
   {
     id: 5,
     title: "Refinery Project Beta",
-    category: "Plumbing",
+    category: "Mechanical",
     location: "Cilegon Industrial Zone",
-    image: "/images/projects/gas-piping-5.jpg",
+    image: "/images/projects/boiler-3.jpeg",
   },
   {
     id: 6,
