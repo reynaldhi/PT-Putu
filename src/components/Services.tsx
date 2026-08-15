@@ -1,111 +1,78 @@
+"use client";
+
 import Image from "next/image";
 import { CheckCircle2, Wrench, Palette, Cog, PackageCheck } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-interface ServiceItem {
+interface ServiceConfig {
   id: string;
-  badge: string;
+  translationKey: "piping" | "interior" | "mechanical" | "material";
   badgeBg: string;
-  title: string;
-  description: string;
   icon: React.ElementType;
   imageSrc: string;
   imageAlt: string;
-  features: string[];
-  ctaText: string;
   ctaHref: string;
 }
 
-const servicesData: ServiceItem[] = [
+const servicesConfig: ServiceConfig[] = [
   {
     id: "gas-piping",
-    badge: "Heavy-Duty EPC",
+    translationKey: "piping",
     badgeBg: "bg-primary",
-    title: "Industrial & Commercial Piping",
-    description:
-      "Pemasangan dan perawatan jaringan pipa gas industri serta sistem hydrant dengan jaminan keamanan dan pengujian tersertifikasi.",
     icon: Wrench,
     imageSrc: "/images/services/piping-service.jpg",
     imageAlt: "Instalasi Pipa Gas Industri",
-    features: [
-      "Instalasi & Perencanaan Pipa Gas",
-      "Instalasi Pipa Hydrant",
-      "Maintenance, Audit, & Repair",
-    ],
-    ctaText: "Konsultasi Pipa & Gas",
     ctaHref: "https://wa.me/+6289699844403?text=Halo%20PT%20Putu%20Marta%20Mandiri,%20saya%20ingin%20konsultasi%20proyek",
   },
   {
     id: "interior-design",
-    badge: "Commercial Fit-Out",
+    translationKey: "interior",
     badgeBg: "bg-slate-navy",
-    title: "Jasa Interior Komersial",
-    description:
-      "Transformasi ruang komersial yang menggabungkan estetika premium dengan fungsionalitas tinggi untuk efisiensi kerja.",
     icon: Palette,
     imageSrc: "/images/services/interior-1.jpg",
     imageAlt: "Jasa Interior Komersial",
-    features: [
-      "Perancangan Desain 3D",
-      "Interior Fit-Out & Construction",
-      "Custom Furniture Production",
-    ],
-    ctaText: "Konsultasi Interior",
     ctaHref: "https://wa.me/+6289699844403?text=Halo%20PT%20Putu%20Marta%20Mandiri,%20saya%20ingin%20konsultasi%20proyek",
   },
   {
     id: "mechanical-engineering",
-    badge: "Industrial Mechanical",
+    translationKey: "mechanical",
     badgeBg: "bg-primary",
-    title: "Pekerjaan Mekanikal",
-    description:
-      "Pemasangan, integrasi, dan perawatan mesin pendingin serta pemanas industri berkapasitas tinggi untuk efisiensi operasional.",
     icon: Cog,
     imageSrc: "/images/services/boiler-1.jpg",
     imageAlt: "Pekerjaan Mekanikal Industri",
-    features: [
-      "Instalasi & Perawatan Burner & Boiler",
-      "Pemasangan Kiln / Tungku Industri",
-      "Sistem Chiller & Heavy Cooling",
-    ],
-    ctaText: "Konsultasi Mekanikal",
     ctaHref: "https://wa.me/+6289699844403?text=Halo%20PT%20Putu%20Marta%20Mandiri,%20saya%20ingin%20konsultasi%20proyek",
   },
   {
     id: "material-supply",
-    badge: "Material Supply",
+    translationKey: "material",
     badgeBg: "bg-slate-navy",
-    title: "Pengadaan Material Gas",
-    description:
-      "Suplai komponen dan instrumen perpipaan gas industri standar sertifikasi resmi untuk keandalan dan keamanan sistem.",
     icon: PackageCheck,
     imageSrc: "/images/services/regulator-4.png",
     imageAlt: "Pengadaan Material Gas Industri",
-    features: [
-      "Gas Meter & Flow Metering System",
-      "Heavy-Duty Ball Valve & Fittings",
-      "Gas Regulator & Pressure Control",
-    ],
-    ctaText: "Konsultasi Material",
     ctaHref: "https://wa.me/+6289699844403?text=Halo%20PT%20Putu%20Marta%20Mandiri,%20saya%20ingin%20konsultasi%20proyek",
   },
 ];
 
 export default function Services() {
+  const t = useTranslations("Services");
+
   return (
     <section id="services" className="py-20 bg-bg-light">
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-slate-navy mb-4">
-            Layanan Utama
+            {t("title")}
           </h2>
           <p className="font-sans text-lg text-surface-variant max-w-2xl mx-auto">
-            Solusi engineering terintegrasi untuk kebutuhan industri dan komersial berskala besar.
+            {t("subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {servicesData.map((service) => {
+          {servicesConfig.map((service) => {
             const IconComponent = service.icon;
+            const key = service.translationKey;
+            const features = t.raw(`${key}.list`) as string[];
 
             return (
               <div
@@ -125,7 +92,7 @@ export default function Services() {
                     <span
                       className={`absolute top-4 left-4 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider ${service.badgeBg}`}
                     >
-                      {service.badge}
+                      {t(`${key}.tag`)}
                     </span>
                   </div>
 
@@ -134,16 +101,16 @@ export default function Services() {
                       <IconComponent className="w-6 h-6" />
                     </div>
                     <h3 className="font-display font-bold text-2xl text-slate-navy">
-                      {service.title}
+                      {t(`${key}.title`)}
                     </h3>
                   </div>
 
                   <p className="font-sans text-surface-variant text-base mb-6 leading-relaxed">
-                    {service.description}
+                    {t(`${key}.description`)}
                   </p>
 
                   <ul className="space-y-3 mb-8">
-                    {service.features.map((feature, idx) => (
+                    {features.map((feature, idx) => (
                       <li
                         key={idx}
                         className="flex items-center gap-3 text-slate-navy font-medium text-sm"
@@ -159,7 +126,7 @@ export default function Services() {
                   href={service.ctaHref}
                   className="inline-flex items-center justify-center w-full py-3 px-6 bg-safety-blue-muted text-primary rounded-xl font-semibold text-sm hover:bg-primary hover:text-white transition-all duration-200"
                 >
-                  {service.ctaText}
+                  {t(`${key}.cta`)}
                 </a>
               </div>
             );

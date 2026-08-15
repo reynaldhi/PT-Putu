@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("middleware",{
+
+/***/ "(middleware)/./language/id.json":
+/*!**************************!*\
+  !*** ./language/id.json ***!
+  \**************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"Navbar":{"gasPiping":"Pipa Gas","interiorDesign":"Desain Interior","projects":"Proyek","certifications":"Sertifikasi","contactUs":"Hubungi Kami"},"Hero":{"badge":"PT PUTU MARTA MANDIRI • PROFIL PERUSAHAAN B2B RESMI","title":"Presisi Engineering & Solusi Desain Modern","description":"Spesialis dalam perpipaan gas industri kelas berat dan desain interior komersial yang elegan. Kami menghadirkan integritas struktural dan keunggulan estetika.","ctaConsultation":"Konsultasi Proyek","ctaPortfolio":"Lihat Portofolio","stats":{"piping":"PIPA TERPASANG","projects":"PROYEK SELESAI","certification":"SERTIFIKASI K3"}},"Services":{"title":"Layanan Utama","subtitle":"Solusi engineering terintegrasi untuk kebutuhan industri dan komersial berskala besar.","piping":{"tag":"HEAVY-DUTY EPC","title":"Perpipaan Industri & Komersial","description":"Pemasangan dan perawatan jaringan pipa gas industri serta sistem hydrant dengan jaminan keamanan dan pengujian tersertifikasi.","list":["Instalasi & Perencanaan Pipa Gas","Instalasi Pipa Hydrant","Maintenance, Audit, & Repair"],"cta":"Konsultasi Pipa & Gas"},"interior":{"tag":"COMMERCIAL FIT-OUT","title":"Jasa Interior Komersial","description":"Transformasi ruang komersial yang menggabungkan estetika premium dengan fungsionalitas tinggi untuk efisiensi kerja.","list":["Perancangan Desain 3D","Interior Fit-Out & Construction","Custom Furniture Production"],"cta":"Konsultasi Interior"},"mechanical":{"tag":"INDUSTRIAL MECHANICAL","title":"Pekerjaan Mekanikal","description":"Pemasangan, integrasi, dan perawatan mesin pendingin serta pemanas industri berkapasitas tinggi untuk efisiensi operasional.","list":["Instalasi & Perawatan Burner & Boiler","Pemasangan Kiln / Tungku Industri","Sistem Chiller & Heavy Cooling"],"cta":"Konsultasi Mekanikal"},"material":{"tag":"MATERIAL SUPPLY","title":"Pengadaan Material Gas","description":"Suplai komponen dan instrumen perpipaan gas industri standar sertifikasi resmi untuk keandalan dan keamanan sistem.","list":["Gas Meter & Flow Metering System","Heavy-Duty Ball Valve & Fittings","Gas Regulator & Pressure Control"],"cta":"Konsultasi Material"}},"Advantages":{"k3":{"title":"Sertifikasi K3","description":"Kepatuhan penuh terhadap standar keselamatan kerja nasional."},"technician":{"title":"Teknisi Ahli","description":"Tim profesional dengan pengalaman lebih dari 10 tahun."},"material":{"title":"Material Terbaik","description":"Hanya menggunakan komponen berkualitas tinggi yang teruji."},"warranty":{"title":"Garansi Layanan","description":"Jaminan kualitas hasil kerja untuk ketenangan pikiran Anda."}}}');
+
+/***/ })
+
+});

@@ -2,88 +2,98 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-type Category = "Semua" | "Plumbing" | "Interior" | "Mechanical" | "Material";
+type CategoryKey = "all" | "Plumbing" | "Interior" | "Mechanical" | "Material";
 
 interface ProjectItem {
   id: number;
-  title: string;
+  titleKey: string;
   category: "Plumbing" | "Interior" | "Mechanical" | "Material";
   image: string;
-  location: string;
+  locationKey: string;
 }
 
 const projects: ProjectItem[] = [
   {
     id: 1,
-    title: "Industrial Plant Alpha",
+    titleKey: "items.1.title",
     category: "Plumbing",
-    location: "Kawasan Industri Cikarang",
+    locationKey: "items.1.location",
     image: "/images/projects/gas-piping-2.jpg",
   },
   {
     id: 2,
-    title: "Executive Boardroom",
+    titleKey: "items.2.title",
     category: "Interior",
-    location: "Sudirman Central Business District",
+    locationKey: "items.2.location",
     image: "/images/projects/interior-2.jpg",
   },
   {
     id: 3,
-    title: "Refinery Project Beta",
+    titleKey: "items.3.title",
     category: "Mechanical",
-    location: "Cilegon Industrial Zone",
+    locationKey: "items.3.location",
     image: "/images/projects/boiler-4.jpeg",
   },
   {
     id: 4,
-    title: "Refinery Project Beta",
+    titleKey: "items.4.title",
     category: "Plumbing",
-    location: "Cilegon Industrial Zone",
+    locationKey: "items.4.location",
     image: "/images/projects/gas-piping-4.jpg",
   },
   {
     id: 5,
-    title: "Refinery Project Beta",
+    titleKey: "items.5.title",
     category: "Mechanical",
-    location: "Cilegon Industrial Zone",
+    locationKey: "items.5.location",
     image: "/images/projects/boiler-3.jpeg",
   },
   {
     id: 6,
-    title: "Refinery Project Beta",
+    titleKey: "items.6.title",
     category: "Plumbing",
-    location: "Cilegon Industrial Zone",
+    locationKey: "items.6.location",
     image: "/images/projects/gas-piping-6.jpg",
   },
   {
     id: 7,
-    title: "Refinery Project Beta",
+    titleKey: "items.7.title",
     category: "Mechanical",
-    location: "Cilegon Industrial Zone",
+    locationKey: "items.7.location",
     image: "/images/projects/burner-1.jpg",
   },
   {
     id: 8,
-    title: "Refinery Project Beta",
+    titleKey: "items.8.title",
     category: "Material",
-    location: "Cilegon Industrial Zone",
+    locationKey: "items.8.location",
     image: "/images/projects/regulator-1.jpg",
   },
   {
     id: 9,
-    title: "Refinery Project Beta",
+    titleKey: "items.9.title",
     category: "Mechanical",
-    location: "Cilegon Industrial Zone",
+    locationKey: "items.9.location",
     image: "/images/projects/boiler-2.jpg",
   },
 ];
 
+const categories: { key: CategoryKey; labelKey: string }[] = [
+  { key: "all", labelKey: "categories.all" },
+  { key: "Plumbing", labelKey: "categories.plumbing" },
+  { key: "Interior", labelKey: "categories.interior" },
+  { key: "Mechanical", labelKey: "categories.mechanical" },
+  { key: "Material", labelKey: "categories.material" },
+];
+
 export default function Portfolio() {
-  const [activeFilter, setActiveFilter] = useState<Category>("Semua");
+  const t = useTranslations("Portfolio");
+  const [activeFilter, setActiveFilter] = useState<CategoryKey>("all");
 
   const filteredProjects =
-    activeFilter === "Semua"
+    activeFilter === "all"
       ? projects
       : projects.filter((p) => p.category === activeFilter);
 
@@ -93,29 +103,27 @@ export default function Portfolio() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
           <div className="max-w-xl">
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-slate-navy mb-4">
-              Portofolio Proyek
+              {t("title")}
             </h2>
             <p className="font-sans text-lg text-surface-variant leading-relaxed">
-              Rekam jejak keberhasilan kami dalam menangani proyek-proyek strategis di seluruh Indonesia.
+              {t("subtitle")}
             </p>
           </div>
 
           <div className="w-full md:w-auto overflow-x-auto no-scrollbar py-1">
             <div className="flex gap-2 bg-white p-1.5 rounded-xl border border-outline-variant/60 shadow-soft w-max">
-              {(["Semua", "Plumbing", "Interior", "Mechanical", "Material"] as Category[]).map(
-                (category) => (
-                  <button
-                    key={category}
-                    onClick={() => setActiveFilter(category)}
-                    className={`px-5 py-2 rounded-lg font-medium text-sm whitespace-nowrap shrink-0 transition-all duration-200 ${activeFilter === category
+              {categories.map((cat) => (
+                <button
+                  key={cat.key}
+                  onClick={() => setActiveFilter(cat.key)}
+                  className={`px-5 py-2 rounded-lg font-medium text-sm whitespace-nowrap shrink-0 transition-all duration-200 ${activeFilter === cat.key
                       ? "bg-primary text-white shadow-sm"
                       : "text-surface-variant hover:text-slate-navy hover:bg-slate-100"
-                      }`}
-                  >
-                    {category}
-                  </button>
-                )
-              )}
+                    }`}
+                >
+                  {t(cat.labelKey)}
+                </button>
+              ))}
             </div>
           </div>
         </div>
@@ -128,7 +136,7 @@ export default function Portfolio() {
             >
               <Image
                 src={project.image}
-                alt={project.title}
+                alt={t(project.titleKey)}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-85 group-hover:opacity-100"
               />
@@ -136,13 +144,13 @@ export default function Portfolio() {
 
               <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
                 <span className="inline-block px-3 py-1 bg-primary/80 backdrop-blur-md text-white text-xs font-bold rounded-md uppercase tracking-wider mb-2">
-                  {project.category}
+                  {t(`categories.${project.category.toLowerCase()}`)}
                 </span>
                 <h4 className="text-white font-display font-bold text-xl mb-1">
-                  {project.title}
+                  {t(project.titleKey)}
                 </h4>
                 <p className="text-white/70 text-xs font-medium">
-                  {project.location}
+                  {t(project.locationKey)}
                 </p>
               </div>
             </div>

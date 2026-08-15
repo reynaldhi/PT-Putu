@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function TrustedBy() {
+  const t = useTranslations("Clients");
   const partners = [
     { name: "Toyota Motor Corp", logo: "/images/logo/TMMIN.png" },
     { name: "Avian Brands", logo: "/images/logo/Avian.svg" },
@@ -26,7 +28,7 @@ export default function TrustedBy() {
     <section className="py-16 bg-white border-t border-slate-200 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 text-center">
         <p className="font-sans font-bold text-xs text-slate-400 uppercase tracking-widest mb-10">
-          Trusted by Industry Leaders
+          {t("title")}
         </p>
 
         <div className="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">

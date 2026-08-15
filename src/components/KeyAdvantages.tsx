@@ -1,26 +1,29 @@
 import { ShieldCheck, Users, ShieldAlert, BadgeCheck } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function KeyAdvantages() {
+  const t = useTranslations("Advantages");
+
   const advantages = [
     {
       icon: ShieldCheck,
-      title: "Sertifikasi K3",
-      description: "Kepatuhan penuh terhadap standar keselamatan kerja nasional.",
+      title: t("k3.title"),
+      description: t("k3.description"),
     },
     {
       icon: Users,
-      title: "Teknisi Ahli",
-      description: "Tim profesional dengan pengalaman lebih dari 10 tahun.",
+      title: t("technician.title"),
+      description: t("technician.description"),
     },
     {
       icon: ShieldAlert,
-      title: "Material Terbaik",
-      description: "Hanya menggunakan komponen berkualitas tinggi yang teruji.",
+      title: t("material.title"),
+      description: t("material.description"),
     },
     {
       icon: BadgeCheck,
-      title: "Garansi Layanan",
-      description: "Jaminan kualitas hasil kerja untuk ketenangan pikiran Anda.",
+      title: t("warranty.title"),
+      description: t("warranty.description"),
     },
   ];
 
