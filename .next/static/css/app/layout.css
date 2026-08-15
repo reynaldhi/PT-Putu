@@ -685,6 +685,10 @@ body {
 .w-full{
   width: 100%;
 }
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -716,6 +720,19 @@ body {
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@keyframes scroll{
+
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(-33.333%);
+  }
+}
+.animate-scroll{
+  animation: scroll 20s linear infinite;
 }
 .cursor-pointer{
   cursor: pointer;
@@ -761,6 +778,9 @@ body {
 }
 .gap-8{
   gap: 2rem;
+}
+.gap-12{
+  gap: 3rem;
 }
 .space-y-2\.5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -1172,6 +1192,10 @@ body {
 .duration-700{
   transition-duration: 700ms;
 }
+.\[mask-image\:_linear-gradient\(to_right\2c transparent_0\2c _black_128px\2c _black_calc\(100\%-128px\)\2c transparent_100\%\)\]{
+  -webkit-mask-image: linear-gradient(to right,transparent 0, black 128px, black calc(100% - 128px),transparent 100%);
+          mask-image: linear-gradient(to right,transparent 0, black 128px, black calc(100% - 128px),transparent 100%);
+}
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -1259,6 +1283,10 @@ body {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:\[animation-play-state\:paused\]:hover{
+  animation-play-state: paused;
 }
 
 .group:hover .group-hover\:scale-105{
