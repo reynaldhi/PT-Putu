@@ -96,40 +96,40 @@
         },
         "items": {
             "1": {
-                "title": "Pabrik Industri Alpha",
-                "location": "Kawasan Industri Cikarang"
+                "title": "Pabrik Toyota Manufacturing Indonesia",
+                "location": "Kawasan Industri Karawang"
             },
             "2": {
-                "title": "Ruang Rapat Eksekutif",
-                "location": "Sudirman Central Business District"
+                "title": "Proyek Pipa Gas Tenant",
+                "location": "Summarecon Mall Bekasi 1"
             },
             "3": {
-                "title": "Proyek Kilang Beta",
-                "location": "Kawasan Industri Cilegon"
+                "title": "Proyek Instalasi Chiller",
+                "location": "Kawasan Industri"
             },
             "4": {
-                "title": "Proyek Kilang Beta",
-                "location": "Kawasan Industri Cilegon"
+                "title": "Design Interior",
+                "location": "Grand Slipi Tower"
             },
             "5": {
-                "title": "Proyek Kilang Beta",
-                "location": "Kawasan Industri Cilegon"
+                "title": "Proyek Instalasi Boiler",
+                "location": "Kawasan Industri Cirebon"
             },
             "6": {
-                "title": "Proyek Kilang Beta",
-                "location": "Kawasan Industri Cilegon"
+                "title": "Proyek Instalasi Pipa Hydrant",
+                "location": "Kawasan Industri"
             },
             "7": {
-                "title": "Proyek Kilang Beta",
+                "title": "Proyek Instalasi & Pengadaan Burner",
                 "location": "Kawasan Industri Cilegon"
             },
             "8": {
-                "title": "Proyek Kilang Beta",
+                "title": "Proyek Pengadaan Regulator",
                 "location": "Kawasan Industri Cilegon"
             },
             "9": {
-                "title": "Proyek Kilang Beta",
-                "location": "Kawasan Industri Cilegon"
+                "title": "Proyek Perawatan & Perbaikan",
+                "location": "Toyota Sunter Plant"
             }
         }
     },

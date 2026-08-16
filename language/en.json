@@ -96,40 +96,40 @@
         },
         "items": {
             "1": {
-                "title": "Industrial Plant Alpha",
-                "location": "Cikarang Industrial Estate"
+                "title": "Toyota Manufacturing Indonesia",
+                "location": "Karawang Industrial Estate"
             },
             "2": {
-                "title": "Executive Boardroom",
-                "location": "Sudirman Central Business District"
+                "title": "Tenant Gas Piping Project",
+                "location": "Summarecon Mall Bekasi"
             },
             "3": {
-                "title": "Refinery Project Beta",
-                "location": "Cilegon Industrial Zone"
+                "title": "Chiller Installation Project",
+                "location": "Industrial Estate"
             },
             "4": {
-                "title": "Refinery Project Beta",
-                "location": "Cilegon Industrial Zone"
+                "title": "Interior Design",
+                "location": "Grand Slipi Tower"
             },
             "5": {
-                "title": "Refinery Project Beta",
-                "location": "Cilegon Industrial Zone"
+                "title": "Boiler Installation Project",
+                "location": "Cirebon Industrial Estate"
             },
             "6": {
-                "title": "Refinery Project Beta",
-                "location": "Cilegon Industrial Zone"
+                "title": "Hydrant Piping Installation Project",
+                "location": "Industrial Estate"
             },
             "7": {
-                "title": "Refinery Project Beta",
+                "title": "Burner Installation & Supply Project",
                 "location": "Cilegon Industrial Zone"
             },
             "8": {
-                "title": "Refinery Project Beta",
+                "title": "Regulator Supply Project",
                 "location": "Cilegon Industrial Zone"
             },
             "9": {
-                "title": "Refinery Project Beta",
-                "location": "Cilegon Industrial Zone"
+                "title": "Project Maintenance & Repair",
+                "location": "Toyota Sunter Plant"
             }
         }
     },

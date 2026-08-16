@@ -20,28 +20,28 @@ const projects: ProjectItem[] = [
     titleKey: "items.1.title",
     category: "Plumbing",
     locationKey: "items.1.location",
-    image: "/images/projects/gas-piping-2.jpg",
+    image: "/images/projects/gas-piping-1.jpg",
   },
   {
     id: 2,
     titleKey: "items.2.title",
-    category: "Interior",
+    category: "Plumbing",
     locationKey: "items.2.location",
-    image: "/images/projects/interior-2.jpg",
+    image: "/images/projects/gas-piping-4.jpg",
   },
   {
     id: 3,
     titleKey: "items.3.title",
     category: "Mechanical",
     locationKey: "items.3.location",
-    image: "/images/projects/boiler-4.jpeg",
+    image: "/images/projects/chiller.jpeg",
   },
   {
     id: 4,
     titleKey: "items.4.title",
-    category: "Plumbing",
+    category: "Interior",
     locationKey: "items.4.location",
-    image: "/images/projects/gas-piping-4.jpg",
+    image: "/images/projects/interior-2.jpg",
   },
   {
     id: 5,
@@ -76,7 +76,7 @@ const projects: ProjectItem[] = [
     titleKey: "items.9.title",
     category: "Mechanical",
     locationKey: "items.9.location",
-    image: "/images/projects/boiler-2.jpg",
+    image: "/images/projects/maintenance.jpg",
   },
 ];
 
@@ -117,8 +117,8 @@ export default function Portfolio() {
                   key={cat.key}
                   onClick={() => setActiveFilter(cat.key)}
                   className={`px-5 py-2 rounded-lg font-medium text-sm whitespace-nowrap shrink-0 transition-all duration-200 ${activeFilter === cat.key
-                      ? "bg-primary text-white shadow-sm"
-                      : "text-surface-variant hover:text-slate-navy hover:bg-slate-100"
+                    ? "bg-primary text-white shadow-sm"
+                    : "text-surface-variant hover:text-slate-navy hover:bg-slate-100"
                     }`}
                 >
                   {t(cat.labelKey)}
