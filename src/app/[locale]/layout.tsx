@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Putu Marta Mandiri - General Contractors & Engineering Solutions",
     description:
       "Solusi engineering terintegrasi untuk kebutuhan industri dan komersial berskala besar.",
-    url: "https://pt-putu.vercel.app",
+    url: "https://putumartamandiri.com",
     siteName: "Putu Marta Mandiri",
     locale: "id_ID",
     type: "website",

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://pt-putu.vercel.app'
+    const baseUrl = 'https://putumartamandiri.com'
 
     return [
         {
