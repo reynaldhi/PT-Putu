@@ -7,8 +7,8 @@ import "../globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Putu Marta Mandiri | Solusi Engineering & Kontraktor Terintegrasi",
-    template: "%s | Putu Marta Mandiri",
+    default: "PT Putu Marta Mandiri | Solusi Engineering & Kontraktor Terintegrasi",
+    template: "%s | PT Putu Marta Mandiri",
   },
   description:
     "Kontraktor spesialis instalasi pipa gas industri, sistem hydrant, pekerjaan mekanikal (boiler/chiller), pengadaan material gas, dan jasa interior komersial.",
@@ -20,18 +20,13 @@ export const metadata: Metadata = {
     "jasa interior komersial",
     "Putu Marta Mandiri",
   ],
-  icons: {
-    icon: "/images/logo/logo logo-pmm-02.png",
-    shortcut: "/images/logo/logo logo-pmm-02.png",
-    apple: "/images/logo/logo logo-pmm-02.png",
-  },
-  authors: [{ name: "Putu Marta Mandiri" }],
+  authors: [{ name: "PT Putu Marta Mandiri" }],
   openGraph: {
-    title: "Putu Marta Mandiri - General Contractors & Engineering Solutions",
+    title: "PT Putu Marta Mandiri - General Contractors & Engineering Solutions",
     description:
       "Solusi engineering terintegrasi untuk kebutuhan industri dan komersial berskala besar.",
-    url: "https://putumartamandiri.com",
-    siteName: "Putu Marta Mandiri",
+    url: "https://www.putumartamandiri.com",
+    siteName: "PT Putu Marta Mandiri",
     locale: "id_ID",
     type: "website",
   },
@@ -58,9 +53,21 @@ export default async function RootLayout({
   }
   const messages = await getMessages();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PT Putu Marta Mandiri",
+    "alternateName": ["Putu Marta Mandiri", "PT. Putu Marta Mandiri"],
+    "url": "https://www.putumartamandiri.com/",
+  };
+
   return (
     <html lang={locale} className="scroll-smooth">
       <body className="bg-bg-light text-slate-charcoal antialiased min-h-screen flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
