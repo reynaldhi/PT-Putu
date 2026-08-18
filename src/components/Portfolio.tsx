@@ -69,7 +69,7 @@ const projects: ProjectItem[] = [
     titleKey: "items.8.title",
     category: "Material",
     locationKey: "items.8.location",
-    image: "/images/projects/regulator-1.jpg",
+    image: "/images/projects/material.png",
   },
   {
     id: 9,

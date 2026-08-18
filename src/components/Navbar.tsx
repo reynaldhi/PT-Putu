@@ -32,9 +32,9 @@ export default function Navbar() {
           </div>
           <div className="min-w-0">
             <span className="font-display font-bold text-base sm:text-xl text-slate-navy tracking-tight block truncate leading-tight sm:leading-normal">
-              Putu Marta Mandiri
+              PUTU MARTA MANDIRI
             </span>
-            <span className="text-[9px] sm:text-[11px] font-medium text-steel uppercase tracking-widest block -mt-0.5 sm:-mt-1 truncate">
+            <span className="text-[9px] sm:text-[10px] font-medium text-steel uppercase tracking-widest block -mt-0.5 sm:-mt-1 truncate">
               General Contractors
             </span>
           </div>

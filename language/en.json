@@ -9,7 +9,7 @@
     "Hero": {
         "badge": "PT PUTU MARTA MANDIRI • OFFICIAL B2B COMPANY PROFILE",
         "title": "Engineering Precision & Modern Design Solutions",
-        "description": "Specializing in heavy-duty industrial gas piping and refined commercial interior design. We deliver structural integrity and aesthetic excellence.",
+        "description": "Specializing in industrial gas piping for both heavy and light industry. We deliver structural integrity and aesthetic excellence.",
         "ctaConsultation": "Project Consultation",
         "ctaPortfolio": "View Portfolio",
         "stats": {
@@ -56,12 +56,12 @@
         },
         "material": {
             "tag": "MATERIAL SUPPLY",
-            "title": "Gas Material Supply",
-            "description": "Supply of certified industrial gas piping components and instruments for system reliability and safety.",
+            "title": "Material Supply",
+            "description": "Supply of certified components, instruments, and spare parts for gas piping, hydrant, boiler, burner, kiln, and industrial chiller systems.",
             "list": [
-                "Gas Meter & Flow Metering Systems",
-                "Heavy-Duty Ball Valve & Fittings",
-                "Gas Regulator & Pressure Control"
+                "Gas Meter, Valve & Pressure Regulator",
+                "Hydrant Components & Piping Fittings",
+                "Boiler, Burner, Kiln & Chiller Spare Part"
             ],
             "cta": "Material Consultation"
         }
@@ -96,15 +96,15 @@
         },
         "items": {
             "1": {
-                "title": "Toyota Manufacturing Indonesia",
-                "location": "Karawang Industrial Estate"
+                "title": "Gas Piping Installation",
+                "location": "Toyota Manufacturing Indonesia"
             },
             "2": {
-                "title": "Tenant Gas Piping Project",
+                "title": "Tenant Gas Piping Installation",
                 "location": "Summarecon Mall Bekasi"
             },
             "3": {
-                "title": "Chiller Installation Project",
+                "title": "Chiller Installation",
                 "location": "Industrial Estate"
             },
             "4": {
@@ -112,29 +112,32 @@
                 "location": "Grand Slipi Tower"
             },
             "5": {
-                "title": "Boiler Installation Project",
+                "title": "Boiler Installation",
                 "location": "Cirebon Industrial Estate"
             },
             "6": {
-                "title": "Hydrant Piping Installation Project",
+                "title": "Hydrant Piping Installation",
                 "location": "Industrial Estate"
             },
             "7": {
-                "title": "Burner Installation & Supply Project",
+                "title": "Burner Installation & Supply",
                 "location": "Cilegon Industrial Zone"
             },
             "8": {
-                "title": "Regulator Supply Project",
+                "title": "Material Supply",
                 "location": "Cilegon Industrial Zone"
             },
             "9": {
-                "title": "Project Maintenance & Repair",
+                "title": "Maintenance & Repair",
                 "location": "Toyota Sunter Plant"
             }
         }
     },
     "Clients": {
-        "title": "TRUSTED BY INDUSTRY LEADERS"
+        "title": "Our Clients",
+        "subtitle": "Trusted by leading companies and brands",
+        "industrialPartners": "Key Industrial Partners",
+        "retailTenants": "F&B & Retail Tenants"
     },
     "Footer": {
         "tagline": "Your trusted partner for heavy-duty industrial gas piping construction services and modern commercial interior design with high OHS standards.",

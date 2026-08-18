@@ -9,7 +9,7 @@
     "Hero": {
         "badge": "PT PUTU MARTA MANDIRI • PROFIL PERUSAHAAN B2B RESMI",
         "title": "Presisi Engineering & Solusi Desain Modern",
-        "description": "Spesialis dalam perpipaan gas industri kelas berat dan desain interior komersial yang elegan. Kami menghadirkan integritas struktural dan keunggulan estetika.",
+        "description": "Spesialis dalam perpipaan gas industri kelas berat dan industri kecil. Kami menghadirkan integritas struktural dan keunggulan estetika.",
         "ctaConsultation": "Konsultasi Proyek",
         "ctaPortfolio": "Lihat Portofolio",
         "stats": {
@@ -56,12 +56,12 @@
         },
         "material": {
             "tag": "MATERIAL SUPPLY",
-            "title": "Pengadaan Material Gas",
-            "description": "Suplai komponen dan instrumen perpipaan gas industri standar sertifikasi resmi untuk keandalan dan keamanan sistem.",
+            "title": "Pengadaan Material",
+            "description": "Penyediaan komponen, instrumen, dan spare part bersertifikasi untuk sistem pipa gas, hydrant, boiler, burner, kiln, hingga chiller industri.",
             "list": [
-                "Gas Meter & Flow Metering System",
-                "Heavy-Duty Ball Valve & Fittings",
-                "Gas Regulator & Pressure Control"
+                "Gas Meter, Valve & Pressure Regulator",
+                "Komponen Hydrant & Piping Fitting",
+                "Spare Part Boiler, Burner, Kiln & Chiller"
             ],
             "cta": "Konsultasi Material"
         }
@@ -96,15 +96,15 @@
         },
         "items": {
             "1": {
-                "title": "Pabrik Toyota Manufacturing Indonesia",
-                "location": "Kawasan Industri Karawang"
+                "title": "Instalasi Pipa Gas",
+                "location": "Toyota Manufacturing Indonesia"
             },
             "2": {
-                "title": "Proyek Pipa Gas Tenant",
+                "title": "Instalasi Pipa Gas Tenant",
                 "location": "Summarecon Mall Bekasi 1"
             },
             "3": {
-                "title": "Proyek Instalasi Chiller",
+                "title": "Instalasi Chiller",
                 "location": "Kawasan Industri"
             },
             "4": {
@@ -112,29 +112,32 @@
                 "location": "Grand Slipi Tower"
             },
             "5": {
-                "title": "Proyek Instalasi Boiler",
+                "title": "Instalasi Boiler",
                 "location": "Kawasan Industri Cirebon"
             },
             "6": {
-                "title": "Proyek Instalasi Pipa Hydrant",
+                "title": "Instalasi Pipa Hydrant",
                 "location": "Kawasan Industri"
             },
             "7": {
-                "title": "Proyek Instalasi & Pengadaan Burner",
+                "title": "Instalasi & Pengadaan Burner",
                 "location": "Kawasan Industri Cilegon"
             },
             "8": {
-                "title": "Proyek Pengadaan Regulator",
+                "title": "Pengadaan Material",
                 "location": "Kawasan Industri Cilegon"
             },
             "9": {
-                "title": "Proyek Perawatan & Perbaikan",
+                "title": "Perawatan & Perbaikan",
                 "location": "Toyota Sunter Plant"
             }
         }
     },
     "Clients": {
-        "title": "DIPERCAYA OLEH PEMIMPIN INDUSTRI"
+        "title": "Client Kami",
+        "subtitle": "Dipercaya oleh perusahaan dan brand terkemuka",
+        "industrialPartners": "Partner Industri Utama",
+        "retailTenants": "Tenant Retail & F&B"
     },
     "Footer": {
         "tagline": "Mitra terpercaya untuk jasa konstruksi instalasi pipa gas industri heavy-duty dan perancangan interior komersial modern berstandar K3 tinggi.",
