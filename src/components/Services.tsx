@@ -25,15 +25,6 @@ const servicesConfig: ServiceConfig[] = [
     ctaHref: "https://wa.me/+6289699844403?text=Halo%20PT%20Putu%20Marta%20Mandiri,%20saya%20ingin%20konsultasi%20proyek",
   },
   {
-    id: "interior-design",
-    translationKey: "interior",
-    badgeBg: "bg-slate-navy",
-    icon: Palette,
-    imageSrc: "/images/services/interior-1.jpg",
-    imageAlt: "Jasa Interior Komersial",
-    ctaHref: "https://wa.me/+6289699844403?text=Halo%20PT%20Putu%20Marta%20Mandiri,%20saya%20ingin%20konsultasi%20proyek",
-  },
-  {
     id: "mechanical-engineering",
     translationKey: "mechanical",
     badgeBg: "bg-primary",
@@ -49,6 +40,15 @@ const servicesConfig: ServiceConfig[] = [
     icon: PackageCheck,
     imageSrc: "/images/services/regulator-4.png",
     imageAlt: "Pengadaan Material Gas Industri",
+    ctaHref: "https://wa.me/+6289699844403?text=Halo%20PT%20Putu%20Marta%20Mandiri,%20saya%20ingin%20konsultasi%20proyek",
+  },
+  {
+    id: "interior-design",
+    translationKey: "interior",
+    badgeBg: "bg-slate-navy",
+    icon: Palette,
+    imageSrc: "/images/services/interior-1.jpg",
+    imageAlt: "Jasa Interior Komersial",
     ctaHref: "https://wa.me/+6289699844403?text=Halo%20PT%20Putu%20Marta%20Mandiri,%20saya%20ingin%20konsultasi%20proyek",
   },
 ];
