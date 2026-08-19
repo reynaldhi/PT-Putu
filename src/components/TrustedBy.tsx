@@ -25,6 +25,9 @@ export default function TrustedBy() {
     { name: "Momoiro", logo: "/images/logo/momoiro.jpg" },
     { name: "Wingstop", logo: "/images/logo/wingstop.png" },
     { name: "Bakmi GM", logo: "/images/logo/bakmi-gm.webp" },
+    { name: "The Halal Guys", logo: "/images/logo/halal-guys.png" },
+    { name: "Imperial Kitchen & DimSum", logo: "/images/logo/imperial.png" },
+    { name: "Say Something Coffee", logo: "/images/logo/something-coffee.jpg" },
   ];
 
   return (

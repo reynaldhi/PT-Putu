@@ -78,6 +78,13 @@ const projects: ProjectItem[] = [
     locationKey: "items.9.location",
     image: "/images/projects/maintenance.jpg",
   },
+  {
+    id: 10,
+    titleKey: "items.10.title",
+    category: "Mechanical",
+    locationKey: "items.10.location",
+    image: "/images/projects/bio-tank.jpeg",
+  },
 ];
 
 const categories: { key: CategoryKey; labelKey: string }[] = [

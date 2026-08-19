@@ -9,7 +9,7 @@
     "Hero": {
         "badge": "PT PUTU MARTA MANDIRI • OFFICIAL B2B COMPANY PROFILE",
         "title": "Engineering Precision & Modern Design Solutions",
-        "description": "Specializing in industrial gas piping for both heavy and light industry. We deliver structural integrity and aesthetic excellence.",
+        "description": "Specialists in industrial mechanical piping and commercial interior design. We combine engineering precision, safety standards, and aesthetic excellence.",
         "ctaConsultation": "Project Consultation",
         "ctaPortfolio": "View Portfolio",
         "stats": {
@@ -61,7 +61,8 @@
             "list": [
                 "Gas Meter, Valve & Pressure Regulator",
                 "Hydrant Components & Piping Fittings",
-                "Boiler, Burner, Kiln & Chiller Spare Part"
+                "Boiler, Burner, Kiln & Chiller Spare Part",
+                "Burner Modification"
             ],
             "cta": "Material Consultation"
         }
@@ -120,7 +121,7 @@
                 "location": "Industrial Estate"
             },
             "7": {
-                "title": "Burner Installation & Supply",
+                "title": "Installation, Modification & Supply of Burners",
                 "location": "Cilegon Industrial Zone"
             },
             "8": {
@@ -130,6 +131,10 @@
             "9": {
                 "title": "Maintenance & Repair",
                 "location": "Toyota Sunter Plant"
+            },
+            "10": {
+                "title": "Installation & Supply of Bio Tank",
+                "location": "PT Avia Avian Tbk."
             }
         }
     },

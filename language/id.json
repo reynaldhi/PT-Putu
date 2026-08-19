@@ -9,7 +9,7 @@
     "Hero": {
         "badge": "PT PUTU MARTA MANDIRI • PROFIL PERUSAHAAN B2B RESMI",
         "title": "Presisi Engineering & Solusi Desain Modern",
-        "description": "Spesialis dalam perpipaan gas industri kelas berat dan industri kecil. Kami menghadirkan integritas struktural dan keunggulan estetika.",
+        "description": "Spesialis perpipaan mekanikal industri dan desain interior komersial. Kami menggabungkan presisi engineering, standar K3, dan keunggulan estetika.",
         "ctaConsultation": "Konsultasi Proyek",
         "ctaPortfolio": "Lihat Portofolio",
         "stats": {
@@ -61,7 +61,8 @@
             "list": [
                 "Gas Meter, Valve & Pressure Regulator",
                 "Komponen Hydrant & Piping Fitting",
-                "Spare Part Boiler, Burner, Kiln & Chiller"
+                "Spare Part Boiler, Burner, Kiln & Chiller",
+                "Modifikasi Burner"
             ],
             "cta": "Konsultasi Material"
         }
@@ -120,7 +121,7 @@
                 "location": "Kawasan Industri"
             },
             "7": {
-                "title": "Instalasi & Pengadaan Burner",
+                "title": "Instalasi, Modifikasi & Pengadaan Burner",
                 "location": "Kawasan Industri Cilegon"
             },
             "8": {
@@ -130,6 +131,10 @@
             "9": {
                 "title": "Perawatan & Perbaikan",
                 "location": "Toyota Sunter Plant"
+            },
+            "10": {
+                "title": "Instalasi & Pengadaan Bio Tank",
+                "location": "PT Avia Avian Tbk."
             }
         }
     },
